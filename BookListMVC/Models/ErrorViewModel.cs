@@ -1,5 +1,3 @@
-using System;
-
 namespace BookListMVC.Models
 {
     public class ErrorViewModel
