@@ -55,11 +55,14 @@ function Delete(url) {
                     success: function (data) {
                         if (data.success) {
                             swal.fire('Success!', 'Data has been deleted', 'success')
-                            toastr.success(data.message);
                             dataTable.ajax.reload();
                         }
                         else {
-                            toastr.error(data.message);
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'Something went wrong!'
+                            })
                         }
                     }
                 });
