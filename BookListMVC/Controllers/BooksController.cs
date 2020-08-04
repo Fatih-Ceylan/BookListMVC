@@ -58,6 +58,7 @@ namespace BookListMVC.Controllers
             }
             return View(Book);
         }
+
         #region API Calls
         [HttpGet]
         public async Task<IActionResult> GetAll()
